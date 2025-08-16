@@ -1,0 +1,34 @@
+name: Update site from issue comment
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  deploy_from_comment:
+    # only run if comment begins with /deploy and contains an ```html code block
+    if: startsWith(github.event.comment.body, '/deploy') && contains(github.event.comment.body, '```html')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract HTML from comment into index.html
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.comment.body;
+            const m = body.match(/```html\s*([\s\S]*?)```/i);
+            if (!m) core.setFailed('No ```html code block found in comment.');
+            require('fs').writeFileSync('index.html', m[1], 'utf8');
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Update index.html from issue comment by @${{ github.actor }} (#${{ github.event.issue.number }})" || echo "No changes to commit"
+          git push
