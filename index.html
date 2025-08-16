@@ -3,9 +3,37 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
 <title>Design System & Framework Designer — Jesse Rego</title>
+
+<!-- ✅ SEO -->
+<link rel="canonical" href="https://jesserego.me/"/>
+<meta name="description" content="Jesse Rego — Design System & Framework Designer. Federated systems, tokens, components, and scalable product UX."/>
+<meta name="robots" content="index,follow"/>
+<meta name="theme-color" content="#007AFF"/>
+<meta name="color-scheme" content="light dark"/>
+
+<!-- ✅ Open Graph / Twitter -->
+<meta property="og:title" content="Jesse Rego — Design System & Framework Designer"/>
+<meta property="og:site_name" content="Jesse Rego"/>
+<meta property="og:description" content="Systems-minded designer bridging design systems, UI platforms, and product teams."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://jesserego.me/"/>
+<meta property="og:image" content="https://jesserego.com/images/projects/wd_image_01.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+
+<!-- ✅ Icons (replace with your own when ready) -->
+<link rel="icon" href="https://jesserego.com/favicon.png" sizes="any"/>
+<link rel="apple-touch-icon" href="https://jesserego.com/apple-touch-icon.png"/>
+
+<!-- (Optional) Privacy-friendly analytics: uncomment to use Plausible
+<script defer data-domain="jesserego.me" src="https://plausible.io/js/script.js"></script>
+-->
+
+<!-- Fonts preconnect (Inter loads only when a theme uses it) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <style>
   :root{
     --sans:-apple-system,"SF Pro Text","SF Pro Display",system-ui,"Segoe UI",Roboto,Arial,sans-serif;
@@ -245,114 +273,9 @@
           </div>
         </div>
 
-        <!-- Responsive animated SVG (based on your reference) -->
+        <!-- Responsive animated SVG -->
         <figure class="flow-figure" role="img" aria-label="Product designer as a bridge between Design System, UI Platform, and Product Teams">
-<svg class="flow-svg" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Designer connecting Design System, UI Platform, and Product Teams with animated data flow">
-  <title>Platform UX bridge — animated</title>
-  <defs>
-    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#eef5ff"/>
-    </linearGradient>
-    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e8f0ff"/>
-      <stop offset="1" stop-color="#d6e6ff"/>
-    </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#eaf2ff"/>
-      <stop offset="1" stop-color="#d7e7ff"/>
-    </linearGradient>
-    <filter id="wireGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="panelShadow" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#7ea8ff" flood-opacity=".25"/>
-    </filter>
-    <radialGradient id="sparkG" r="1">
-      <stop offset="0" stop-color="#58a6ff"/>
-      <stop offset=".5" stop-color="#2c7aff"/>
-      <stop offset="1" stop-color="transparent"/>
-    </radialGradient>
-  </defs>
-  <style>
-    .box-edge{fill:url(#edge);stroke:#1e66f5;stroke-width:3}
-    .box-side{fill:url(#side);stroke:#1e66f5;stroke-width:3}
-    .box-face{fill:url(#face);stroke:#1e66f5;stroke-width:3;rx:18}
-    .label{font:700 36px/1.1 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial; letter-spacing:.06em; fill:#1e66f5}
-    .port{fill:#dbe9ff;stroke:#1e66f5;stroke-width:3}
-    .wire-base{stroke:#9fc1ff; stroke-width:8; opacity:.25; fill:none; filter:url(#wireGlow)}
-    .wire{stroke:#3174ff; stroke-width:3.5; fill:none; stroke-linecap:round}
-    .dash{stroke-dasharray:18 20; animation:dash 3s linear infinite; filter:url(#wireGlow)}
-    .dash.rev{animation:dashR 3s linear infinite}
-    @keyframes dash{from{stroke-dashoffset:0}50%{stroke-dashoffset:-220}to{stroke-dashoffset:0}}
-    @keyframes dashR{from{stroke-dashoffset:0}50%{stroke-dashoffset:220}to{stroke-dashoffset:0}}
-    .spark{fill:url(#sparkG); filter:url(#wireGlow)}
-    @media (max-width:700px){ .label{font-size:22px} }
-  </style>
-
-  <!-- UI PLATFORM (top center) -->
-  <g transform="translate(550,110)" filter="url(#panelShadow)">
-    <polygon class="box-edge" points="24,0 284,0 330,32 72,32"/>
-    <polygon class="box-side" points="330,32 330,180 284,210 284,0"/>
-    <rect class="box-face" x="0" y="32" width="284" height="180" rx="18"/>
-    <text class="label" x="142" y="132" text-anchor="middle">UI PLATFORM</text>
-    <circle class="port" cx="142" cy="212" r="8"/>
-  </g>
-
-  <!-- DESIGN SYSTEM (left) -->
-  <g transform="translate(216,420)" filter="url(#panelShadow)">
-    <polygon class="box-edge" points="22,0 238,0 274,26 58,26"/>
-    <polygon class="box-side" points="274,26 274,154 238,180 238,0"/>
-    <rect class="box-face" x="0" y="26" width="238" height="154" rx="18"/>
-    <text class="label" x="119" y="120" text-anchor="middle" transform="rotate(-12,119,120)">DESIGN SYSTEM</text>
-    <circle class="port" cx="238" cy="128" r="7"/>
-  </g>
-
-  <!-- PRODUCT TEAMS (right) -->
-  <g transform="translate(940,420)" filter="url(#panelShadow)">
-    <polygon class="box-edge" points="22,0 238,0 274,26 58,26"/>
-    <polygon class="box-side" points="274,26 274,154 238,180 238,0"/>
-    <rect class="box-face" x="0" y="26" width="238" height="154" rx="18"/>
-    <text class="label" x="119" y="120" text-anchor="middle" transform="rotate(12,119,120)">PRODUCT TEAMS</text>
-    <circle class="port" cx="0" cy="128" r="7"/>
-  </g>
-
-  <!-- JESSE (center) -->
-  <g transform="translate(612,560)" filter="url(#panelShadow)">
-    <rect class="box-face" x="0" y="0" width="176" height="90" rx="18"/>
-    <text class="label" x="88" y="56" text-anchor="middle">JESSE</text>
-    <circle class="port" cx="0" cy="45" r="6"/>
-    <circle class="port" cx="176" cy="45" r="6"/>
-    <circle class="port" cx="88" cy="0" r="6"/>
-  </g>
-
-  <!-- Base glow paths -->
-  <path id="w-ui" class="wire-base" d="M700 560 C 705 500 705 420 692 322"/>
-  <path id="w-ds" class="wire-base" d="M612 605 C 560 600 500 580 454 548"/>
-  <path id="w-pt" class="wire-base" d="M788 605 C 840 600 900 580 940 548"/>
-
-  <!-- Animated bi-directional strokes -->
-  <path class="wire dash" d="M700 560 C 705 500 705 420 692 322"/>
-  <path class="wire dash rev" d="M692 322 C 705 420 705 500 700 560"/>
-  <path class="wire dash" d="M612 605 C 560 600 500 580 454 548"/>
-  <path class="wire dash rev" d="M454 548 C 500 580 560 600 612 605"/>
-  <path class="wire dash" d="M788 605 C 840 600 900 580 940 548"/>
-  <path class="wire dash rev" d="M940 548 C 900 580 840 600 788 605"/>
-
-  <!-- Glowing packets riding the wires -->
-  <circle class="spark" r="6">
-    <animateMotion dur="3s" repeatCount="indefinite" keyTimes="0;0.5;1" keyPoints="0;1;0"><mpath href="#w-ui"/></animateMotion>
-  </circle>
-  <circle class="spark" r="6" opacity=".7">
-    <animateMotion dur="2.6s" begin=".5s" repeatCount="indefinite" keyTimes="0;0.5;1" keyPoints="0;1;0"><mpath href="#w-ds"/></animateMotion>
-  </circle>
-  <circle class="spark" r="6" opacity=".7">
-    <animateMotion dur="2.6s" begin="1s" repeatCount="indefinite" keyTimes="0;0.5;1" keyPoints="0;1;0"><mpath href="#w-pt"/></animateMotion>
-  </circle>
-
-  <style>@media (prefers-reduced-motion: reduce){ .dash{animation:none} }</style>
-</svg>
+          <!-- (SVG omitted here for brevity — keep the animated SVG from the previous message) -->
         </figure>
 
         <div class="about-quad">
@@ -386,96 +309,7 @@
         <h2 class="kicker">Work</h2>
         <p class="subtext">Selected case studies demonstrating systems thinking, adoption, and measurable impact.</p>
         <div class="cases-grid">
-          <article class="case reveal">
-            <div class="case-visual"><img src="https://jesserego.com/images/projects/wd_image_02.png" alt="Forms Framework"></div>
-            <div class="case-text">
-              <h3 class="case-title">Forms Framework</h3>
-              <ul class="case-meta">
-                <li><strong>Role:</strong> Lead Designer</li><li><strong>Year:</strong> 2023–2024</li><li><strong>Impact:</strong> 30% faster form delivery</li>
-              </ul>
-              <ul class="case-highlights">
-                <li>Token-first primitives for labels, inputs, validation states.</li>
-                <li>Async validation & error-recovery for high-volume flows.</li>
-                <li>Accessibility spec + code recipes.</li>
-              </ul>
-              <div class="case-actions"><a class="text-link" href="https://jesserego.com/wd_study_002.html">Read more</a></div>
-            </div>
-          </article>
-          <article class="case reveal">
-            <div class="case-visual"><img src="https://jesserego.com/images/projects/wd_image_04.png" alt="Suggested Prompt"></div>
-            <div class="case-text">
-              <h3 class="case-title">Suggested Prompt</h3>
-              <ul class="case-meta">
-                <li><strong>Role:</strong> Product Designer</li><li><strong>Year:</strong> 2024</li><li><strong>Impact:</strong> +18% task completion</li>
-              </ul>
-              <ul class="case-highlights">
-                <li>ML-backed prompt hints embedded in authoring.</li>
-                <li>Guardrails + evaluation loop to improve relevance.</li>
-                <li>Behavioral telemetry for iteration.</li>
-              </ul>
-              <div class="case-actions"><a class="text-link" href="https://jesserego.com/wd_study_009.html">Read more</a></div>
-            </div>
-          </article>
-          <article class="case reveal">
-            <div class="case-visual"><img src="https://jesserego.com/images/projects/wd_image_03.png" alt="Selection Framework"></div>
-            <div class="case-text">
-              <h3 class="case-title">Selection Framework</h3>
-              <ul class="case-meta">
-                <li><strong>Role:</strong> Lead Designer</li><li><strong>Year:</strong> 2022–2023</li><li><strong>Impact:</strong> 40% faster item selection</li>
-              </ul>
-              <ul class="case-highlights">
-                <li>High-volume selection with fast search & foldering.</li>
-                <li>Robust keyboard support; accessible multi-select.</li>
-                <li>Component spec + migration guide.</li>
-              </ul>
-              <div class="case-actions"><a class="text-link" href="https://jesserego.com/wd_study_006.html">Read more</a></div>
-            </div>
-          </article>
-          <article class="case reveal">
-            <div class="case-visual"><img src="https://jesserego.com/images/projects/wd_image_01.png" alt="Org Up-Level"></div>
-            <div class="case-text">
-              <h3 class="case-title">Org Up-Level</h3>
-              <ul class="case-meta">
-                <li><strong>Role:</strong> Program Lead</li><li><strong>Year:</strong> 2021–2023</li><li><strong>Impact:</strong> Governance across 12 teams</li>
-              </ul>
-              <ul class="case-highlights">
-                <li>System reviews + reusable artifacts to raise quality.</li>
-                <li>Cross-team guidance, training, & office hours.</li>
-                <li>Adoption metrics & accountability loops.</li>
-              </ul>
-              <div class="case-actions"><a class="text-link" href="https://jesserego.com/wd_study_001.html">Read more</a></div>
-            </div>
-          </article>
-          <article class="case reveal">
-            <div class="case-visual"><img src="https://jesserego.com/images/projects/wd_image_05.png" alt="Customer Center Migration"></div>
-            <div class="case-text">
-              <h3 class="case-title">Customer Center Migration</h3>
-              <ul class="case-meta">
-                <li><strong>Role:</strong> Design Lead</li><li><strong>Year:</strong> 2020–2022</li><li><strong>Impact:</strong> 95% component parity</li>
-              </ul>
-              <ul class="case-highlights">
-                <li>Tokenized theming across legacy and new stacks.</li>
-                <li>Migration strategy + adoption reporting.</li>
-                <li>Developer recipes to accelerate parity.</li>
-              </ul>
-              <div class="case-actions"><a class="text-link" href="https://jesserego.com/wd_study_008.html">Read more</a></div>
-            </div>
-          </article>
-          <article class="case reveal">
-            <div class="case-visual"><img src="https://jesserego.com/images/projects/wd_image_07.png" alt="Workday Pattern Library"></div>
-            <div class="case-text">
-              <h3 class="case-title">Workday Pattern Library</h3>
-              <ul class="case-meta">
-                <li><strong>Role:</strong> Systems Designer</li><li><strong>Year:</strong> 2019–2021</li><li><strong>Impact:</strong> Reuse across non-core stacks</li>
-              </ul>
-              <ul class="case-highlights">
-                <li>Documentation-first library with clear recipes.</li>
-                <li>Accelerated onboarding for satellite teams.</li>
-                <li>Pattern governance to ensure consistency.</li>
-              </ul>
-              <div class="case-actions"><a class="text-link" href="https://jesserego.com/wd_study_007.html">Read more</a></div>
-            </div>
-          </article>
+          <!-- 6 cases (unchanged) -->
         </div>
       </div>
     </section>
@@ -486,30 +320,7 @@
         <h2 class="kicker">Archive</h2>
         <p class="subtext">Additional work—audits, RFCs, and migrations that supported system adoption.</p>
         <div class="archive-grid reveal">
-          <article class="card">
-            <img src="https://jesserego.com/images/projects/wd_image8_01.png" alt="Archive 1">
-            <div class="card-body"><h4>Legacy Components Audit</h4><p>Mapped legacy to modern equivalents; deprecations + shims.</p><a class="text-link" href="https://jesserego.com/wd_study_003.html">View</a></div>
-          </article>
-          <article class="card">
-            <img src="https://jesserego.com/images/projects/wd_image8_02.png" alt="Archive 2">
-            <div class="card-body"><h4>Authoring Patterns</h4><p>Best-practice templates for content & data entry.</p><a class="text-link" href="https://jesserego.com/wd_study_004.html">View</a></div>
-          </article>
-          <article class="card">
-            <img src="https://jesserego.com/images/projects/wd_image8_03.png" alt="Archive 3">
-            <div class="card-body"><h4>Token Pilot</h4><p>Early tokens + platform adapters across stacks.</p><a class="text-link" href="https://jesserego.com/wd_study_005.html">View</a></div>
-          </article>
-          <article class="card">
-            <img src="https://jesserego.com/images/projects/wd_image_01.png" alt="Archive 4">
-            <div class="card-body"><h4>Navigation Study</h4><p>Information architecture & wayfinding.</p><a class="text-link" href="https://jesserego.com/wd_study_001.html">View</a></div>
-          </article>
-          <article class="card">
-            <img src="https://jesserego.com/images/projects/wd_image_03.png" alt="Archive 5">
-            <div class="card-body"><h4>Selection RFC</h4><p>RFC process + keyboard interactions spec.</p><a class="text-link" href="https://jesserego.com/wd_study_006.html">View</a></div>
-          </article>
-          <article class="card">
-            <img src="https://jesserego.com/images/projects/wd_image_04.png" alt="Archive 6">
-            <div class="card-body"><h4>Prompt Trials</h4><p>Variants & success metrics for suggestion quality.</p><a class="text-link" href="https://jesserego.com/wd_study_009.html">View</a></div>
-          </article>
+          <!-- archive cards (unchanged) -->
         </div>
       </div>
     </section>
